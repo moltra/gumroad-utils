@@ -53,7 +53,7 @@ class GumroadSession(_RequestsSession):
 
     @property
     def base_url(self) -> str:
-        return "https://app.gumroad.com"
+        return "https://gumroad.com"
 
     def get_soup(self, url: str) -> BeautifulSoup:
         response = self.get(url, allow_redirects=False)
